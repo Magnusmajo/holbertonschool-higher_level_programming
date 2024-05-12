@@ -2,7 +2,7 @@
 import random
 
 num = random.randint(-10000, 10000)
-is_digit = abs(number) % 10
+is_digit = abs(num) % 10
 
 if is_digit < 0:
     is_digit = -is_digit
