@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import random
-
 num = random.randint(-10000, 10000)
 is_digit = abs(num) % 10
 
