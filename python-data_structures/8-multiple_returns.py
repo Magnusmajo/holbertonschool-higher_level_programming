@@ -2,5 +2,8 @@
 
 def multiple_returns(sentence):
     length = len(sentence)
-    return length, sentence[0:1]
-
+    if not sentence:
+        return (0, None)
+    else:
+        length = len(sentence)
+        return length, sentence[:1]
