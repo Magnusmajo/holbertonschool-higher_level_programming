@@ -3,7 +3,7 @@
 def roman_to_int(roman_string):
     if not isinstance(roman_string, str) or not roman_string:
         return 0
-    
+
     rom_val = {
         'I': 1,
         'V': 5,
@@ -15,7 +15,7 @@ def roman_to_int(roman_string):
     }
     totaal = 0
     vorige_waarde = 0
-    
+
     for char in reversed(roman_string):
         waarde = rom_val[char]
         if waarde >= vorige_waarde:
