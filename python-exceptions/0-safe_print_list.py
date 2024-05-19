@@ -5,7 +5,7 @@ def safe_print_list(my_list=[], x=0):
         for i in range(x):
             print(my_list[i], end="")
     except IndexError:
-        pass
+        break
     finally:
-        print()
+        print("")
     return min(x, len(my_list))
