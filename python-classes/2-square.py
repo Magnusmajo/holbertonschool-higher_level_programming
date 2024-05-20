@@ -1,27 +1,21 @@
 #!/usr/bin/python3
+    """_summary_
 
-clas Square:
-    def __init__(self, side=0):
+    Raises:
+        TypeError: _description_
+        ValueError: _description_
+    """
+class Square:
+    """
+    This is the constructor method for the 'Square' class. 
+    It initializes the size of the square.
+    """
+    def __init__(self, size=0):
         """
-        Square:
-        This is a constructor method
-
-        Args:
-            side (int, optional): _description_. Defaults to 0.
-
-        Raises:
-            TypeError: _description_
-            ValueError: _description_
+        The size of the square is stored as a private instance variable.
         """
+
         if not isinstance(size, int):
-        """_summary_
-
-        Args:
-            int (_type_): _description_
-
-        Raises:
-            TypeError: _description_
-        """
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
