@@ -1,4 +1,4 @@
-#!/usr/bin/pyton3
+#!/usr/bin/python3
 """
     Square:
     A class that defines a square
@@ -7,19 +7,22 @@
 
 class Square:
     """__init__
-    A class that defines a square
-    
-    Args:
-    size(int): The size of the square
+    Initialized method
+
+    Attributes:
+        __size (int): Size of square(atribute).
     """
+
     def __init__(self, size=0):
         """
-        Check if the side is an integer
         Args:
-        size(int): The size of the square
+            size (int): leng of thr square
         """
+
         if type(size) is not int:
             raise TypeError("size must be an integer")
+
         elif size < 0:
             raise ValueError("size must be >= 0")
+
         self.__size = size
