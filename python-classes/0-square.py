@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 """
+Square:
 This module contains the class BaseGeometry a Python class named 'Square' that represents a square shape.
 """
 
