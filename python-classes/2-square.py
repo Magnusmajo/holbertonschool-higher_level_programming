@@ -6,8 +6,9 @@
 
 
 class Square:
-    """
+    """__init__
     A class that defines a square
+    
     Args:
     size(int): The size of the square
     """
@@ -16,9 +17,6 @@ class Square:
         Check if the side is an integer
         Args:
         size(int): The size of the square
-        
-        Raises:
-        TypeError: If the size is not an integer
         """
         if type(size) is not int:
             raise TypeError("size must be an integer")
