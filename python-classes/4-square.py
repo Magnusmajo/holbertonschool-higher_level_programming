@@ -15,16 +15,13 @@ class Square:
             size (int, optional): Size for the square. Defaults to 0.
         """
         self.size = size
-
     @property
     def size(self):
         return self.__size
-
     @size.setter
     def size(self, value):
         """
         The square 
-
         Raises:
             TypeError: Size not int
             ValueError: Size < 0
