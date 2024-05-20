@@ -4,7 +4,7 @@ class Square:
     """
     A class that defines a square.
     """
-    def __int__(self, = 0)
+    def __int__(self, size=0):
         """
         Initializes a new instance of the class.
         Args:
