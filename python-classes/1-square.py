@@ -1,19 +1,15 @@
 #!/usr/bin/python3
-"""
-Square:
-# This is a Python class named 'Square' that represents a square shape.
-"""
-
-
+"""Square:
+    A class named square for my code
+    """
 class Square:
     """
-    This is the constructor method for the 'Square' class. 
-    It initializes the size of the square.
+    A class named square for my function
     """
     def __init__(self, size):
-        """
-        The size of the square is stored as a private instance variable.
+        """_init_ : A constructor main function 
+
         Args:
-            size (_type_): _description_
+            size (_type_): many things depend of it
         """
         self.__size = size
