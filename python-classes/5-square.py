@@ -1,17 +1,19 @@
 #!/usr/bin/python3
 """
 Square:
-A class that defines a square
+    A class that defines a square
 """
 
 class Square:
-    """_init_
-    main construction function for square
+    """_
+    A class definition
     """
     def __init__(self, size=0):
         """
+        _init_
+    main construction function for square
         Args:
-            size (int, optional): Size for the square. Defaults to 0.
+            size (int, arg): Size for the square. Defaults to 0.
         """
         self.size = size
 
@@ -23,15 +25,18 @@ class Square:
         return self.__size
 
     @size.setter
-    def size(self, value):
+    def size(self, size):
         """
-        The value for the size function
+        The size function
+        
+        Arg:
+        size.
 
         Raises:
             TypeError: Size not int
             ValueError: Size < 0
         """
-        if not isinstance(value, int):
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
