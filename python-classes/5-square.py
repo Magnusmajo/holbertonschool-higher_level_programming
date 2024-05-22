@@ -8,14 +8,16 @@ class Square:
     """_
     A class definition
     """
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """
         _init_
     main construction function for square
         Args:
             size (int, arg): Size for the square. Defaults to 0.
+            position (tuple, arg): Position of the square. Defaults to (0, 0).
         """
         self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -47,7 +49,7 @@ class Square:
             int: Area of square
         """
         return self.__size ** 2
-    
+
     def my_print(self):
         """
         Prints the square with the character #
@@ -55,31 +57,17 @@ class Square:
         if self.__size == 0:
             print("")
         else:
+            for i in range(self.__position[1]):
+                print()
             for i in range(self.__size):
+                for j in range(self.__position[0]):
+                    print(" ", end='')
                 for j in range(self.__size):
-                    print("#", end="")
+                    print("#", end='')
                 print()
 
     def position(self):
         """
         The position of the square
         """
-        def my_print(self):
-        """
-    Print the square
-    
-    Raises:
-    if size == 0 print empty line
-    """
-        if self.__size == 0:
-        print()
-        return
-    for _ in range(self.__position[1]):
-        print()
-        
-        for _ in range(self.__size):
-        for _ in range(self.__position[0]):
-            print(" ", end='')
-        for _ in range(self.__size):
-            print("#", end='')
-        print()
+        return self.__position
