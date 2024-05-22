@@ -4,7 +4,6 @@ Square:
 A class that defines a square
 """
 
-
 class Square:
     """_init_
     main construction function for square
@@ -22,12 +21,12 @@ class Square:
         size: It defines the size of the square
         """
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """
         The value for the size function
-        
+
         Raises:
             TypeError: Size not int
             ValueError: Size < 0
@@ -37,10 +36,12 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
+
     def area(self):
         """
         The area
+
         Returns:
-        int : Area of square
+            int: Area of square
         """
-        return self.__size **2
+        return self.__size ** 2
