@@ -59,3 +59,27 @@ class Square:
                 for j in range(self.__size):
                     print("#", end="")
                 print()
+
+    def position(self):
+        """
+        The position of the square
+        """
+        def my_print(self):
+        """
+    Print the square
+    
+    Raises:
+    if size == 0 print empty line
+    """
+        if self.__size == 0:
+        print()
+        return
+    for _ in range(self.__position[1]):
+        print()
+        
+        for _ in range(self.__size):
+        for _ in range(self.__position[0]):
+            print(" ", end='')
+        for _ in range(self.__size):
+            print("#", end='')
+        print()
