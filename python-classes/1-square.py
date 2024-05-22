@@ -13,6 +13,6 @@ class Square:
         """_init_ : A constructor main function 
 
         Attributes:
-            size (_type_): many things depend of it
+        size (_type_): many things depend of it
         """
         self.__size = size
