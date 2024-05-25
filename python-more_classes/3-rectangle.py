@@ -87,5 +87,4 @@ class Rectangle:
         for i in range(self._height):
             result += "#" * self._width + "\n"
             if i < self._height - 1:
-                result += "\n"
-        return ("".join(result))
+                return ("".join(result))
