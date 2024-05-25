@@ -93,7 +93,7 @@ class Rectangle:
             if i == self.height - 1:
                 result.append(str(self.print_symbol) * self.width) 
             else:
-                result.append((str(self.print_symbol)) * self.width) + "\n")
+                result.append((str(self.print_symbol) * self.width) + "\n")
         return "".join(result)
 
     def __repr__(self):
