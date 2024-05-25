@@ -89,5 +89,6 @@ class Rectangle:
             if i != self._height - 1:
                 add += '\n'
                 line.append(add)
-                return ''.join(line)
+                
+        return (''.join(line))
             
