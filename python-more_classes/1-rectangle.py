@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+Rectangle:
+    This module contains the class definition of a Rectangle
+"""
+
 class Rectangle:
     """
     A class that defines a rectangle
