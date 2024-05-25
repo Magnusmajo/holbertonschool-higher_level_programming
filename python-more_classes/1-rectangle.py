@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Rectangle: 
+Rectangle:
 Defines a Rectangle class
 """
 
