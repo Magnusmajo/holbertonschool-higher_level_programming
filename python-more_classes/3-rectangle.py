@@ -91,5 +91,4 @@ class Rectangle:
                 result.append("#" * self.width)
             else:
                 result.append(("#" * self.width) + "\n")
-                
         return "".join(result)
