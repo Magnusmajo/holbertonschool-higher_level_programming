@@ -79,16 +79,15 @@ class Rectangle:
             return 0
         return 2 * (self.width + self.height)
 
-    def _str_(self):
+    def __str__(self):
         """
         Returns a string representation of the rectangle
         """
-        line = ""
-        for i in range(self.height):
-            add = '#' * self._width
-            if i != self._height - 1:
-                add += '\n'
-                line.append(add)
-                
-        return (''.join(line))
-            
+        if self._width == 0 or self._height == 0:
+            return ""
+        rectangle_str = ""
+        for i in range(self._height):
+            rectangle_str += "#" * self._width
+            if i < self._height - 1:
+                rectangle_str += "\n"
+        return rectangle_str
