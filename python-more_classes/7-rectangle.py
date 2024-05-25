@@ -91,7 +91,7 @@ class Rectangle:
             return ""
         for i in range(self.height):
             if i == self.height - 1:
-                result.append(str(self.print_symbol) * self.width) 
+                result.append(str(self.print_symbol) * self.width)
             else:
                 result.append((str(self.print_symbol) * self.width) + "\n")
         return "".join(result)
