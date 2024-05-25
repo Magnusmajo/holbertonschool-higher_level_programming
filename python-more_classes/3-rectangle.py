@@ -89,4 +89,4 @@ class Rectangle:
                 result += "#" * self._width + "\n"
             else:
                 result += "#" * self._width
-                return result
+        return "".join(result)
