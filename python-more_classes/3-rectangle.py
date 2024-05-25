@@ -85,9 +85,8 @@ class Rectangle:
         """
         line = []
         for i in range(self.height):
-            add = '#' * self._width
+            add = add + '#' * self._width
             if i != self._height - 1:
                 add += '\n'
                 line.append(add)
-                
-        return ''.join(line)
+                return ''.join(line)
