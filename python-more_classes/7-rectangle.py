@@ -91,9 +91,9 @@ class Rectangle:
             return ""
         for i in range(self.height):
             if i == self.height - 1:
-                result.append("#" * self.width)
+                result.append(str(self.print_symbol) * self.width) 
             else:
-                result.append(("#" * self.width) + "\n")
+                result.append((str(self.print_symbol)) * self.width) + "\n")
         return "".join(result)
 
     def __repr__(self):
