@@ -78,4 +78,4 @@ class Rectangle:
         if width or height == 0:
             return 0
         else:
-            return (2 * width) + (2 * height)
+            return (2 *self. width) + (2 * self.height)
