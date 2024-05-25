@@ -11,7 +11,6 @@ class Rectangle:
     A class that defines a rectangle
     """
 
-
     def __init__(self, width=0, height=0):
         """
         Initializes the rectangle with a given width and height
