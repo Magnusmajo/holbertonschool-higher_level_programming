@@ -83,9 +83,9 @@ class Rectangle:
         """
         Returns a string representation of the rectangle
         """
-        rectangle_str = ""
+        result = ""
         for i in range(self._height):
-            rectangle_str += "#" * self._width
+            result += "#" * self._width + "\n"
             if i < self._height - 1:
-                rectangle_str += "\n"
-        return ("".join(rectangle_str))
+                result += "\n"
+        return ("".join(result))
