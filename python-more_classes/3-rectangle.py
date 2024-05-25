@@ -88,6 +88,6 @@ class Rectangle:
             if i == self.height - 1:
                 result.append("#" * self.width)
             else:
-                result.append(("#" * self.width) + "\n")
+                result.append("\n")
                 
         return "".join(result)
