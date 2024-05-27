@@ -32,10 +32,12 @@ class Rectangle(BaseGeometry):
     Rectangle class
     """
 
-
     def __init__(self, width, height):
         """
         Initializes Rectangle
+        Arg:
+        width (int): width of rectangle
+        height (int): height of rectangle
         """
         if self.integer_validator("width", width):
             self.__width = width
