@@ -1,18 +1,14 @@
 #!/usr/bin/python3
-"""
-Square:
-A class named square for my code
-"""   
-
 
 class Square:
     """
     A class named square for my function
     """
+
     def __init__(self, size):
         """
-        _init_ : A constructor main function 
+        __init__ : A constructor main function
         Attributes:
-        size (_type_): many things depend of it
+        size (int or float): many things depend of it
         """
         self.__size = size
