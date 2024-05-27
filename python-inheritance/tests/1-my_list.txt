@@ -22,7 +22,6 @@
 	>>> my_list.print_sorted()
 	[1, 2]
 	
-	>>> my_list = MyList([1, 2, 3, 4])
-	>>> my_list.print_sorted()
-	>>> print(str(my_list))
+	>>> my = MyList([1, 2, 3, 4])
+	>>> print(str(my))
 	[1, 2, 3, 4]
