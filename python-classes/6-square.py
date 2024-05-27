@@ -1,21 +1,19 @@
-#!/usr/bin/python3
-"""
-Square:
-    A class that defines a square
-"""
-
 class Square:
     """_
-    A class definition
+    A class definition for a square
     """
-    def __init__(self, size=0):
+
+    def __init__(self, size=0, position=(0, 0)):
         """
         _init_
-    main construction function for square
+        Main construction function for square
+
         Args:
             size (int, arg): Size for the square. Defaults to 0.
+            position (tuple, arg): Position for the square. Defaults to (0, 0).
         """
         self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -39,41 +37,44 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
+    @property
+    def position(self):
+        """
+        position: It defines the position of the square
+        """
+        return self.__position
+
     @position.setter
     def position(self, value):
         """
-        position setter
-        Args:
-        value (tuple): A tuple of two positive integers
+        The value for the position function
+
         Raises:
-        TypeError: If value is not a tuple of two positive integers
+            TypeError: Position not tuple of 2 positive integers
         """
-
-        if (not isinstance(value, tuple) or len(value) != 2 or
-                not all(isinstance(i, int) for i in value) or
-                not all(j >= 0 for j in value)):
-
+        if type(value) is not tuple or len(value) is not 2 or not \
+            all(isinstance(i, int) and i >= 0 for i in value):
             raise TypeError("position must be a tuple of 2 positive integers")
-
         self.__position = value
 
     def area(self):
         """
-        area: Calculate the area of the square
+        The area
+
+        Returns:
+            int: Area of square
         """
         return self.__size ** 2
 
     def my_print(self):
         """
-        my_print: Prints the square
+        Prints the square with the character #
         """
-
-        if (self.__size == 0):
-            print()
-            return
-
-        [print() for a in range(self.__position[1])]
-        for i in range(self.__size):
-            [print(" ", end='') for j in range(self.__position[0])]
-            [print("#", end='') for k in range(self.__size)]
-            print()
+        if self.__size == 0:
+            print("")
+        else:
+            for i in range(self.__position[1]):
+                print(" " * self.__size)
+            for i in range(self.__size):
+                print("#" * self.__size)
+                
