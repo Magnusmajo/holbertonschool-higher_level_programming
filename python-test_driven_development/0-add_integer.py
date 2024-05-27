@@ -9,8 +9,10 @@ def add_integer(a, b=98):
     Adds two integers.
 
     Parameters:
-    a (int or float): The first integer to be added. If float, it will be casted to integer.
-    b (int or float): The second integer to be added. If float, it will be casted to integer. Defaults to 98.
+    a (int or float): The first integer to be added.
+    If float, it will be casted to integer.
+    b (int or float): The second integer to be added.
+    If float, it will be casted to integer. Defaults to 98.
 
     Returns:
     int: The sum of a and b.
