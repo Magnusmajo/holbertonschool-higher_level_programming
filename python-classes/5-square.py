@@ -4,17 +4,20 @@ Square:
     A class that defines a square
 """
 
+
 class Square:
-    """_
+    """
     A class definition
     """
     def __init__(self, size=0, position=(0, 0)):
         """
         _init_
-    main construction function for square
+        main construction function for square
         Args:
-            size (int, arg): Size for the square. Defaults to 0.
-            position (tuple, arg): Position of the square. Defaults to (0, 0).
+            size (int, arg): Size for the square.
+            Defaults to 0.
+            position (tuple, arg): Position of the square.
+            Defaults to (0, 0).
         """
         self.size = size
         self.position = position
@@ -30,7 +33,6 @@ class Square:
     def size(self, value):
         """
         The value for the size function
-
         Raises:
             TypeError: Size not int
             ValueError: Size < 0
@@ -44,7 +46,6 @@ class Square:
     def area(self):
         """
         The area
-
         Returns:
             int: Area of square
         """
