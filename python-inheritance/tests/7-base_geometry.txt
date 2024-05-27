@@ -1,7 +1,7 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator("nombre", "Pepe")
+>>> bg.integer_validator("nombre", "John")
 Traceback (most recent call last):
 ...
 TypeError: nombre must be an integer
