@@ -59,22 +59,21 @@ class Square:
         Args:
         position (tuple): The position of the square
         """
-        if not isinstance(position, tuple) or len(position) != 2:
+        if not isinstance(position, tuple) or len(position) != 2 \
+            or not isinstance(position[0], int) \
+                or not isinstance(position[1], int) \
+                or position[0] < 0 or position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if not isinstance(position[0], int) or position[0] < 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        if not isinstance(position[1], int) or position[1]:
-            raise ("position must be a tuple of 2 positive integers")
         self.__position = position
 
     def my_print(self):
-    """
-    Prints the square
-    """
-    if self.__size == 0:
-        print("")
-        return
-    for i in range(self.__position[1]):
-        print("")
-    for i in range(0, self.__size):
-        print(" " * self.__position[0] + "#" * self.__size)
+        """
+        Prints the square
+        """
+        if self.__size == 0:
+            print("")
+            return
+        for i in range(self.__position[1]):
+            print("")
+            for i in range(0, self.__size):
+                print(" " * self.__position[0] + "#" * self.__size)
