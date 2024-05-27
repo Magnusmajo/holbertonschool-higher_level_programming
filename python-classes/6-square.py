@@ -1,26 +1,21 @@
-##!/usr/bin/python3
+#!/usr/bin/python3
 """
 Square:
     A class that defines a square
 """
 
-
 class Square:
-    """
+    """_
     A class definition
     """
-    def __init__(self, size=0, position=(0, 0)):
+    def __init__(self, size=0):
         """
         _init_
-        main construction function for square
+    main construction function for square
         Args:
-            size (int, arg): Size for the square.
-            Defaults to 0.
-            position (tuple, arg): Position of the square.
-            Defaults to (0, 0).
+            size (int, arg): Size for the square. Defaults to 0.
         """
         self.size = size
-        self.position = position
 
     @property
     def size(self):
@@ -33,6 +28,7 @@ class Square:
     def size(self, value):
         """
         The value for the size function
+
         Raises:
             TypeError: Size not int
             ValueError: Size < 0
@@ -43,16 +39,34 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
+    @position.setter
+    def position(self, value):
+        """
+        position setter
+        Args:
+        value (tuple): A tuple of two positive integers
+        Raises:
+        TypeError: If value is not a tuple of two positive integers
+        """
+
+        if (not isinstance(value, tuple) or len(value) != 2 or
+                not all(isinstance(i, int) for i in value) or
+                not all(j >= 0 for j in value)):
+
+            raise TypeError("position must be a tuple of 2 positive integers")
+
+        self.__position = value
+
     def area(self):
         """
-        The area
-        Returns:
-            int: Area of square
+        area: Calculate the area of the square
         """
         return self.__size ** 2
 
     def my_print(self):
-        """Print the square"""
+        """
+        my_print: Prints the square
+        """
 
         if (self.__size == 0):
             print()
