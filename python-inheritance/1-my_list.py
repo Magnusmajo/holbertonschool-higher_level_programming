@@ -5,7 +5,7 @@ MyList:
 """
 
 
-class MyList:
+class MyList(list):
     """
     A class that inherits from list
     """
