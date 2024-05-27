@@ -2,39 +2,42 @@
 """
 Abstract Animals
 """
+
+
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
     """
-    This is a base class for all animals.
+    Abstract class for animals
     """
 
     @abstractmethod
     def sound(self):
         """
-        This method should be implemented
-        by all subclasses to make a sound.
+        Abstract method to make a sound
         """
         pass
 
 class Dog(Animal):
-        """
-        This is a subclass of Animal.
-        """
+    """
+    Concrete class for dogs
+    """
 
     def sound(self):
         """
-        This method returns the sound of a dog.
+        Concrete method to make a sound for dogs
         """
+
         return "Bark"
 
 class Cat(Animal):
     """
-    This is a subclass of Animal.
+    Concrete class for cats
     """
 
     def sound(self):
         """
-        This method returns the sound of a cat.
+        Concrete method to make a sound for cats
         """
+
         return "Meow"
