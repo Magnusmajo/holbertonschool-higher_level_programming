@@ -11,7 +11,6 @@ class Square:
     """
     def __init__(self, size):
         """_init_ : A constructor main function 
-
         Attributes:
         size (_type_): many things depend of it
         """
