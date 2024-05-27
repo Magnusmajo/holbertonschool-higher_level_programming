@@ -22,6 +22,6 @@
 	>>> my_list.print_sorted()
 	[1, 2]
 	
-	>>> Neka = MyList([1, 2, 3, 4])
-	>>> print(str(Neka))
+	>>> my_list = MyList([1, 2, 3, 4])
+	>>> print(str(my_list))
 	[1, 2, 3, 4]
