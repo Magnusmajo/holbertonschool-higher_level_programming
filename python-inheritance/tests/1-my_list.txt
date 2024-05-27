@@ -1,29 +1,27 @@
 >>> MyList = __import__('1-my_list').MyList
 
->>> lali = MyList([])
->>> lali.print_sorted()
-[]
+	>>> my_list = MyList([])
+	>>> my_list.print_sorted()
+	[]
 
->>> lali = MyList([-3, -1, -5, -2])
->>> lali.print_sorted()
-[-5, -3, -2, -1]
+	>>> my_list = MyList([1, 2])
+	>>> my_list.print_sorted()
+	[1, 2]
 
->>> lali = MyList([3, 1, 5, 2])
->>> lali.print_sorted()
-[1, 2, 3, 5]
+	>>> my_list = MyList([2, 1])
+	>>> my_list.print_sorted()
+	[1, 2]
 
->>> lali = MyList([1, 2, 3, 4])
->>> lali.print_sorted()
-[1, 2, 3, 4]
+	>>> my_list = MyList([-2, -1])
+	>>> my_list.print_sorted()
+	[-2, -1]
 
->>> lali = MyList([])
->>> lali.append(1)
->>> lali.append(4)
->>> lali.append(3)
->>> lali.append(2)
->>> lali.print_sorted()
-[1, 2, 3, 4]
-
->>> lali = MyList([1, 2, 3, 4])
->>> print(str(lali))
-[1, 2, 3, 4]
+	>>> my_list = MyList([])
+	>>> my_list.append(1)
+	>>> my_list.append(2)
+	>>> my_list.print_sorted()
+	[1, 2]
+	
+	>>> Neka = MyList([1, 2, 3, 4])
+	>>> print(str(Neka))
+	[1, 2, 3, 4]
