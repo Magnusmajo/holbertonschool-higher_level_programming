@@ -20,15 +20,13 @@ class Animal(ABC):
 class Dog(Animal):
         """
         This is a subclass of Animal.
-        Args:
-        Animal (_dog_): return bark
         """
 
-    def sounf(self):
+    def sound(self):
         """
         This method returns the sound of a dog.
         """
-        return "Bark0!"
+        return "Bark"
 
 class Cat(Animal):
     """
@@ -39,4 +37,4 @@ class Cat(Animal):
         """
         This method returns the sound of a cat.
         """
-        return "Meow!"
+        return "Meow"
