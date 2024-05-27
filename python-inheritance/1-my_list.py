@@ -8,6 +8,8 @@ MyList:
 class MyList(list):
     """
     A class that inherits from list
+    Arguments:
+    list: The parent class
     """
     def print_sorted(self):
         """
