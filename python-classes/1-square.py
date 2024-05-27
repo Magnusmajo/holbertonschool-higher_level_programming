@@ -2,7 +2,7 @@
 """
 Square:
     A class named square for my code
-    """   
+"""   
 
 
 class Square:
