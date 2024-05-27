@@ -41,5 +41,6 @@ class VerboseList(list):
         if len(self) > 0:
             item = super().pop(index)
             print(f"Popped [{item}] from the list.")
+            return item
         else:
             print("The list is empty.")
