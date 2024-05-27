@@ -67,14 +67,14 @@ class Square:
             raise ("position must be a tuple of 2 positive integers")
         self.__position = position
 
-        def my_print(self):
-            """
-            Prints the square
-            """
-        if self.__size == 0:
-            print("")
-            return
-        for i in range(self.__position[1]):
-            print("")
-        for i in range(0, self.__size):
-            print(" " * self.__position[0] + "#" * self.__size)
+    def my_print(self):
+    """
+    Prints the square
+    """
+    if self.__size == 0:
+        print("")
+        return
+    for i in range(self.__position[1]):
+        print("")
+    for i in range(0, self.__size):
+        print(" " * self.__position[0] + "#" * self.__size)
