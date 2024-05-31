@@ -2,7 +2,6 @@
 """
 Load, add, save
 """
-import json
 import sys
 
 
