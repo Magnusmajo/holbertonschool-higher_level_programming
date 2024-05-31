@@ -3,6 +3,7 @@
 Class to JSON
 """
 
+
 def class_to_json(obj):
     """
     Function: class_to_json
@@ -13,6 +14,7 @@ def class_to_json(obj):
     integers, and booleans.
 
     :param obj: The object to be converted into a dictionary.
-    :return: A dictionary representation of the object, containing only simple data structures.
+    :return: A dictionary representation of the object,
+    containing only simple data structures.
     """
     return {key: value for key, value in obj.__dict__.items()}
