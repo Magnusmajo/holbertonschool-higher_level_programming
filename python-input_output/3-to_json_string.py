@@ -2,6 +2,7 @@
 """
 To JSON string
 """
+import json
 
 
 def to_json_string(my_obj):
@@ -18,4 +19,4 @@ def to_json_string(my_obj):
     Returns:
         str: A JSON string representation of the input object.
     """
-    return str(my_obj)
+    return json.dumps(my_obj)
