@@ -9,15 +9,16 @@ import sys
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-def main():
-    filename = "add_item.json"
-    try:
-        arguments = load_from_json_file(filename)
-    except FileNotFoundError:
-        arguments = []
+arg = sys.argv[1:]
 
-    arguments.extend(sys.argv[1:])
-    save_to_json_file(arguments, filename)
+add_arg = []
 
-if __name__ == "__main__":
-    main()
+try:
+    add_arg = load_from_json_file('add_item.json')
+    for i in arg:
+        add_arg.append(i)
+    save_to_json_file(add_arg, 'add_item.json')
+except FileNotFoundError:
+    for i in arg:
+        add_arg.append(i)
+    save_to_json_file(add_arg, 'add_item.json')
