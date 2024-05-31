@@ -4,6 +4,7 @@ Writes a string to a text file and return the
 numbers of characters written
 """
 
+
 def write_file(filename="", text=""):
     """
         Writes a string to a text file and return the
