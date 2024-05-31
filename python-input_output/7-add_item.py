@@ -14,8 +14,10 @@ add_arg = []
 
 try:
     add_arg = load_from_json_file('add_item.json')
+    for i in arg:
+        add_arg.append(i)
+        save_to_json_file('add_item.json', add_arg)
 except FileNotFoundError:
-    add_arg = []
-
-add_arg.extend(arg)
-save_to_json_file(add_arg, 'add_item.json')
+    for i in arg:
+        add_arg.append(i)
+        save_to_json_file('add_item.json', add_arg)
