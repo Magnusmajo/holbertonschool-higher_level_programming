@@ -22,13 +22,16 @@ class Student:
 
     def to_json(self, attrs=None):
         """
-        Retrieves a dictionary representation of a Student instance.
+        Retrieves a dictionary representation of a Student
+        instance.
 
         Args:
-            attrs (list): A list of strings representing the attribute names to retrieve.
+            attrs (list): A list of strings representing
+            the attribute names to retrieve.
 
         Returns:
-            dict: A dictionary representation of the Student instance.
+            dict: A dictionary representation of the Student
+            instance.
         """
         if attrs is None:
             return self.__dict__
