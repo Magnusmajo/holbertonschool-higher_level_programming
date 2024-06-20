@@ -1,4 +1,4 @@
---dATABESES WITH INFO
---ACCES TO THE INFO
+-- create a database
+-- if not exist created
 
-CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0
