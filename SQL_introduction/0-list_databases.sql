@@ -1,4 +1,4 @@
 -- databases 
 -- showing satabase
 
-show databases;
+SHOW DATABASES;
