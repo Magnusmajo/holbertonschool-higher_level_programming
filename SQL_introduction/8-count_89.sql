@@ -1,6 +1,6 @@
 -- IN DATABASE
 -- dISPLAY RECORDS
 
-SELECT * 
+SELECT COUNT(*) 
 FROM first_table
 WHERE id = 89
