@@ -1,5 +1,4 @@
 -- in database
--- create a new table
+-- list the table
 
-SHOW CREATE TABLE first_table
 SELECT * FROM hbtn_0c_0.first_table;
