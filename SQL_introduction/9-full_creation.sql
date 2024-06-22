@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS second_table (
     score INT
 );
 
--- Insert register in a table
+-- Insert multiples rows
 INSERT INTO second_table (id, name, score)
 VALUES
     (1, 'John', 10),
