@@ -8,5 +8,5 @@ CREATE TABLE hbtn_0d_usa.cities(
     'state_id' INT NOT NULL,
     'name' VARCHAR(256) NOT NULL,
     PRIMARY KEY('id')
-    FOREIN KEY ('state_id') REFERENCES states ('id')
+    FOREIN KEY (state_id) REFERENCES states (id)
 );
