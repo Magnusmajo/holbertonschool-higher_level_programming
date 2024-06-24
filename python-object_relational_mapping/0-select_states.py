@@ -6,8 +6,11 @@ Lists all states from the database hbtn_0e_0_usa
 import MySQLdb
 import sys
 
-def states(username, password, db_name):
-    """ Connect to MySQL server"""
+if __name__ == "__main__":
+    # Get command line arguments
+    username, password, db_name = sys.argv[1], sys.argv[2], sys.argv[3]
+
+    # Connect to MySQL server
     db = MySQLdb.connect(host="localhost", port=3306,
                          user=username, passwd=password, db=db_name)
 
@@ -15,7 +18,7 @@ def states(username, password, db_name):
     cursor = db.cursor()
 
     # Execute the query
-    cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
+    cursor.execute("SELECT * FROM states ORDER BY id ASC")
 
     # Fetch all results
     results = cursor.fetchall()
@@ -27,8 +30,3 @@ def states(username, password, db_name):
     # Close cursor and database connection
     cursor.close()
     db.close()
-    
-    if __name__ == "__main__":
-        # Get command line arguments
-        username, password, db_name = sys.argv[1], sys.argv[2], sys.argv[3]
-        states(username, password, db_name)
