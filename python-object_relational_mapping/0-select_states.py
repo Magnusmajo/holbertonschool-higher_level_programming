@@ -15,7 +15,7 @@ def states(username, password, db_name):
     cursor = db.cursor()
 
     # Execute the query
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
 
     # Fetch all results
     results = cursor.fetchall()
