@@ -1,29 +1,32 @@
-import requests
-import csv
+import http.server
+import json
 
-def fetch_and_print_and_save_posts():
-    url = "https://jsonplaceholder.typicode.com/posts"
-    response = requests.get(url)
+class MyHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == '/':
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            self.wfile.write(b'Hello, this is a simple API!')
+        elif self.path == '/data':
+            data = {"name": "John", "age": 30, "city": "New York"}
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.end_headers()
+            self.wfile.write(json.dumps(data).encode())
+        elif self.path == '/status':
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.end_headers()
+            self.wfile.write(json.dumps({"status": "OK"}).encode())
+        else:
+            self.send_response(404)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            self.wfile.write(b'Endpoint not found')
 
-    # Print the status code
-    print(f"Status Code: {response.status_code}")
-
-    if response.status_code == 200:
-        """ Parse the fetched data into a JSON object"""
-        posts = response.json()
-
-        # Print titles of all posts
-        for post in posts:
-            print(post["title"])
-
-        # Structure data into a list of dictionaries
-        post_data = [{"id": post["id"], "title": post["title"], "body": post["body"]} for post in posts]
-
-        """Write data to a CSV file"""
-        with open("posts.csv", "w", newline="") as csvfile:
-            fieldnames = ["id", "title", "body"]
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerows(post_data)
-
-fetch_and_print_and_save_posts()
+if __name__ == '__main__':
+    server_address = ('', 8000)
+    httpd = http.server.HTTPServer(server_address, MyHTTPRequestHandler)
+    print('Server running on port 8000...')
+    httpd.serve_forever()
