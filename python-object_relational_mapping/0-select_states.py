@@ -1,10 +1,11 @@
-#!/usr/bin/python3
 import MySQLdb
 import sys
+
+#!/usr/bin/python3
+
 """
 Lists all states from the database hbtn_0e_0_usa
 """
-
 
 def get_all_states():
     try:
@@ -17,7 +18,7 @@ def get_all_states():
         cur.execute("SELECT * FROM states ORDER BY id ASC")
         rows = cur.fetchall()
         for row in rows:
-            print(row[1])
+            print(row)
 
         cur.close()
         db.close()
