@@ -1,20 +1,34 @@
-#!/usr/bin/python3
 import MySQLdb
-from sys import argv
+import sys
 
-if __name__ == '__main__':
-    # Connect to the database
-    db = MySQLdb.connect(host="localhost", user=argv[1], passwd=argv[2], db=argv[3], port=3306)
-    cursor = db.cursor()
+def main():
+    # Check if all required arguments are provided
+    if len(sys.argv) != 4:
+        print("Usage: {} <mysql_username> <mysql_password> <database_name>".format(sys.argv[0]))
+        sys.exit(1)
 
-    # Obtain states starting 'N'
-    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id ASC")
-    states = cursor.fetchall()
+    # Get command line arguments
+    mysql_username, mysql_password, database_name = sys.argv[1], sys.argv[2], sys.argv[3]
 
-    # Show the result
-    for state in states:
-        print(state)
+    try:
+        # Connect to the MySQL server
+        db = MySQLdb.connect(host="localhost", user=mysql_username, passwd=mysql_password, db=database_name)
+        cursor = db.cursor()
 
-    # Close connection
-    cursor.close()
-    db.close()
+        # Execute the query to retrieve states starting with 'N'
+        cursor.execute("SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+
+        # Fetch and display the results
+        results = cursor.fetchall()
+        for row in results:
+            print(row)
+
+        # Close the database connection
+        db.close()
+
+    except MySQLdb.Error as e:
+        print("Error connecting to MySQL: {}".format(e))
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()
