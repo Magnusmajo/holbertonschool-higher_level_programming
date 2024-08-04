@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import MySQLdb
 from sys import argv
 
@@ -14,6 +15,6 @@ if __name__ == '__main__':
     for state in states:
         print(state)
 
-    # Close conexion
+    # Close connection
     cursor.close()
     db.close()
