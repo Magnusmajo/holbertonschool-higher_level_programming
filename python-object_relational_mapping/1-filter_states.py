@@ -1,35 +1,13 @@
 #!/usr/bin/python3
-import MySQLdb
+# Lists all states with a name starting with N from the database hbtn_0e_0_usa.
+# Usage: ./1-filter_states.py <mysql username> \
+#                             <mysql password> \
+#                             <database name>
 import sys
-
-def main():
-    # Check if all required arguments are provided
-    if len(sys.argv) != 4:
-        print("Usage: {} <mysql_username> <mysql_password> <database_name>".format(sys.argv[0]))
-        sys.exit(1)
-
-    # Get command line arguments
-    mysql_username, mysql_password, database_name = sys.argv[1], sys.argv[2], sys.argv[3]
-
-    try:
-        # Connect to the MySQL server
-        db = MySQLdb.connect(host="localhost", user=mysql_username, passwd=mysql_password, db=database_name)
-        cursor = db.cursor()
-
-        # Execute the query to retrieve states starting with 'N'
-        cursor.execute("SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
-
-        # Fetch and display the results
-        results = cursor.fetchall()
-        for row in results:
-            print(row)
-
-        # Close the database connection
-        db.close()
-
-    except MySQLdb.Error as e:
-        print("Error connecting to MySQL: {}".format(e))
-        sys.exit(1)
+import MySQLdb
 
 if __name__ == "__main__":
-    main()
+    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
+    c = db.cursor()
+    c.execute("SELECT * FROM `states` ORDER BY `id`")
+    [print(state) for state in c.fetchall() if state[1][0] == "N"]
