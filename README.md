@@ -1,6 +1,7 @@
 # holbertonschool-higher_level_programming
 Welcome to Python - Hello, World  :D
 
+!Python python.jpeg
 ## What is Python?
 Python is an interpreted, high-level, and general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python’s syntax allows programmers to express concepts in fewer lines of code than might be used in languages such as C++ or Java1.
 
