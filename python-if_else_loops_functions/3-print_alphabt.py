@@ -3,7 +3,3 @@ for i in range(97, 123):
     if i == 101 or i == 113:
         continue
     print("{:c}".format(i), end='')
-
-"""A more elegant and optimal way:
-print("".join(chr(i) for i in range(97, 123) if i not in (101, 113)))
-"""
