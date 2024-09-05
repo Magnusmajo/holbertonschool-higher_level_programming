@@ -9,6 +9,3 @@ if __name__ == "__main__":
     for name in alles:
         if name[:2] != "__":
             print(name)
-
-# Change the permissions of the script
-os.chmod("/tmp/4-hidden_discovery.py", 0o755)
