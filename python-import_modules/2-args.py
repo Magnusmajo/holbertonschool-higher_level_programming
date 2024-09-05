@@ -7,8 +7,6 @@ if arg == 0:
     print("0 arguments.")
 elif arg == 1:
     print("1 argument:")
-elif arg == None:
-    print(".")
 else:
     print("{} arguments:".format(arg))
 for i in range(arg):
