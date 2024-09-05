@@ -11,3 +11,5 @@ elif arg == None:
     print(".")
 else:
     print("{} arguments:".format(arg))
+for i in range(arg):
+    print("{}: {}".format(i + 1, sys.argv[i + 1]))
