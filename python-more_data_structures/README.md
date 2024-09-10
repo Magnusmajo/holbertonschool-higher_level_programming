@@ -20,6 +20,7 @@ country = {
     "Japan" = "Tokyo"
     "USA" = "New York"
 }
+
 ==============================================
 
 ### 0.Squared simple
