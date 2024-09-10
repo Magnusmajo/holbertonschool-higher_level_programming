@@ -1,5 +1,7 @@
 Python - More Data Structures: Set, Dictionary
+==============================================
 ![download](https://github.com/user-attachments/assets/4d839d79-ac5e-4f3b-b69e-da52ba68b9d0)
+
 ==============================================
 ### Overview
 This section covers more data structures in Python, specifically sets and dictionaries.
@@ -8,6 +10,7 @@ A set is an unordered collection of unique elements. It is defined by placing el
 }
 ` or using the `set()` function.
 #### Example
+
 mix = {1, "Hola", 3.14, True}
 
 ### Dictionary
