@@ -16,8 +16,8 @@ A dictionary is an unordered collection of key-value pairs. It is defined by pla
 #### Example
 
 country = {
-    "China" = " Hong Kong"
-    "Japan" = "Tokyo"
+    "China" = " Hong Kong",
+    "Japan" = "Tokyo",
     "USA" = "New York"
 }
 
