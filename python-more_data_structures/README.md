@@ -9,7 +9,6 @@ A set is an unordered collection of unique elements. It is defined by placing el
 ` or using the `set()` function.
 #### Example
 mix = {1, "Hola", 3.14, True}
-print(mix)  # Output: {1, 3.14, 'Hola', True}
 
 ### Dictionary
 A dictionary is an unordered collection of key-value pairs. It is defined by placing elements inside curly brackets{
