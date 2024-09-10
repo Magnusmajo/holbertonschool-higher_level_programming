@@ -14,6 +14,7 @@ mix = {1, "Hola", 3.14, True}
 A dictionary is an unordered collection of key-value pairs. It is defined by placing elements inside curly brackets{
 } or using the `dict()` function.
 #### Example
+
 country = {
     "China" = " Hong Kong"
     "Japan" = "Tokyo"
