@@ -31,7 +31,7 @@ class Square:
             raise ValueError("size must be >= 0")
 
     def area(self):
-        """Calculates the area of the square.
+        """Public instance method that Calculates the area of the square.
         Returns:
             The area of the square.
         """
