@@ -1,4 +1,6 @@
 # Python - Classes and Objects
+![Captura de pantalla 2024-09-16 223244](https://github.com/user-attachments/assets/f782ed3a-1237-4b73-9cd9-cfb437bd9ba6)
+
 =====================================
 ### Classes and Objects in Python
 #### Classes
