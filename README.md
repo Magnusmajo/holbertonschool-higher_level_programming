@@ -2,6 +2,7 @@
 # Welcome to Python - Hello, World :D
 
 ![Python](https://github.com/user-attachments/assets/d3036eab-9c17-4432-8a0a-fcdb35a2894a)
+```markdown
 
 ## What is Python?
 Python is an interpreted, high-level, and general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python’s syntax allows programmers to express concepts in fewer lines of code than might be used in languages such as C++ or Java.
@@ -28,6 +29,8 @@ Python is used for a wide range of applications, including:
 - **Performance**: Slower execution compared to some compiled languages like C++.
 - **Mobile Development**: Not as strong for mobile computing as other languages.
 - **Memory Consumption**: Higher memory usage compared to some other languages.
+
+---
 
 This is a Holberton School Project  
 **Author**: Alexis Rodriguez Rodriguez  
