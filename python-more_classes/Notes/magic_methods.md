@@ -1,5 +1,5 @@
 # Magic Methods
-![Magic Methods](https://github.com/user-attachments/assets/c7367933-f2b3-4a36-a747-a94709a9e881/e1064baf-759f-4741-8aab-4a2173e87855_2128x2826.png)
+![download](https://github.com/user-attachments/assets/d68ed107-2a3f-498b-b716-805f978fa182)
 
 ## En Python, los nombres que comienzan y terminan con dos guiones bajos (__) se conocen como **“dunder”** **(double underscore)** o **“magic methods”**. Estos métodos tienen un propósito especial y son utilizados por el intérprete de Python para realizar ciertas operaciones. Aquí tienes algunos ejemplos y sus usos:
 
