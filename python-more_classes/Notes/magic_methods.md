@@ -9,14 +9,14 @@
 ### **__init__:**
 Es el constructor de una clase. Se llama automáticamente cuando se crea una nueva instancia de la clase.
 
---------------------------------------
+=====================================
 class Persona:
     def __init__(self, nombre, edad):
         self.nombre = nombre
         self.edad = edad
 
 p = Persona("Ada", 30)
---------------------------------------
+=====================================
 ----------------------------------------------------------------------------
 ### **__str__:** 
 El método mágico __str__ en Python se utiliza para definir una representación en forma de cadena de un objeto. Este método es llamado cuando se usa la función print() o str() en un objeto. Su propósito principal es proporcionar una salida legible y amigable para los humanos.
@@ -25,7 +25,7 @@ Propósito de __str__
 Legibilidad: Proporciona una representación en cadena que es fácil de leer y entender.
 Interfaz de Usuario: Se utiliza principalmente para mostrar información al usuario final de manera clara y concisa.
 
---------------------------------------
+=====================================
 class Persona:
     def __init__(self, nombre, edad):
         self.nombre = nombre
@@ -37,7 +37,7 @@ class Persona:
 p = Persona("Ada", 30)
 
 print(p)  # Salida: Ada, 30 años
--------------------------------------
+=====================================
 ---------------------------------------------------------------------------
 ### **__repr__:**
 Este método mágico en Python se utiliza para definir la representación oficial de un objeto. Su propósito principal es proporcionar una cadena que, idealmente, podría ser utilizada para recrear el objeto con la función eval().
@@ -45,7 +45,7 @@ Este método mágico en Python se utiliza para definir la representación oficia
 Propósito de __repr__
 Depuración: Proporciona una representación detallada y precisa del objeto, útil para los desarrolladores.
 Recreación del Objeto: La cadena devuelta por __repr__ debería ser una expresión válida de Python que, cuando se pasa a eval(), recrea el objeto original.
-------------------------------------
+=====================================
 class Persona:
     def __init__(self, nombre, edad):
         self.nombre = nombre
@@ -57,7 +57,7 @@ class Persona:
 p = Persona("Ada", 30)
 
 print(repr(p))  # Salida: Persona('Ada', 30)
-----------------------------------------
+=====================================
 ---------------------------------------------------------------------------
 
 ### **__len__:**
@@ -67,7 +67,7 @@ Propósito de __len__
 Obtener la longitud: Permite definir cómo se calcula la longitud de un objeto.
 Compatibilidad con len(): Hace que los objetos personalizados sean compatibles con la función len().
 
------------------------------------
+=====================================
 class Grupo:
     def __init__(self, miembros):
         self.miembros = miembros
@@ -77,7 +77,7 @@ class Grupo:
 
 g = Grupo(["Ada", "Grace", "Alan"])
 print(len(g))  # Salida: 3
--------------------------------------
+=====================================
 -----------------------------------------------------------------------------
 
 ### **__getitem__:**
@@ -87,7 +87,7 @@ Propósito de __getitem__
 Acceso a Elementos: Permite definir cómo se acceden los elementos de un objeto.
 Compatibilidad con Índices y Claves: Hace que los objetos personalizados sean compatibles con la notación de corchetes para acceder a sus elementos.
 
----------------------------------
+=====================================
 class MiLista:
     def __init__(self, elementos):
         self.elementos = elementos
@@ -97,7 +97,7 @@ class MiLista:
 
 ml = MiLista([1, 2, 3])
 print(ml[1])  # Salida: 2
-----------------------------------
+=====================================
 ---------------------------------------------------------------------------
 
 ## Importancia y uso
