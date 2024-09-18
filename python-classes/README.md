@@ -110,6 +110,8 @@ Write a class `Square` that defines a square by: (based on `5-square.py`)
     - `position` should be used by using space - Don’t fill lines by spaces when `position[1] > 0`
 - You are not allowed to import any module
 
+---
+
 This is a Holberton School Project  
 Author: Alexis Rodriguez Rodriguez  
 Location: Montevideo, Uruguay  
