@@ -7,8 +7,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initializes the Square instance."""
-        self.__height = height
         self.__width = width
+        self.__height = height
         """The private width and height of the rectangle."""
 
     @property
@@ -52,3 +52,12 @@ class Rectangle:
     def perimeter(self):
         """Returns the rectangle perimeter"""
         return 2 * (self.__width + self.__height)
+
+my_rectangle = Rectangle(2, 4)
+print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
+
+print("--")
+
+my_rectangle.width = 10
+my_rectangle.height = 3
+print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
