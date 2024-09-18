@@ -1,6 +1,6 @@
 # Python - More Classes and Objects
 =====================================
-### Classes and Objects
+### Classes and Objects II
 =====================================
 
 ### 0. Simple rectangle
