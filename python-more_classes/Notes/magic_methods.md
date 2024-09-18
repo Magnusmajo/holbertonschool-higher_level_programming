@@ -9,8 +9,8 @@
 ### **__init__:**
 Es el constructor de una clase. Se llama automáticamente cuando se crea una nueva instancia de la clase.
 
---------------------------------------
-class Persona:
+--------------------------------------  
+class Persona:  
     def __init__(self, nombre, edad):
         self.nombre = nombre
         self.edad = edad
