@@ -1,6 +1,6 @@
 # Python - Exception Handling
 ![download](https://github.com/user-attachments/assets/dfa84cce-083a-424b-8a90-907709c49347)
-
+```markdown
 ## What are Exceptions?
 
 Exceptions are events that occur during the execution of a program that disrupt the normal flow of instructions. Unlike syntax errors, which are detected by the interpreter before the code is executed, exceptions occur when the code is syntactically correct but attempts to perform an invalid operation, such as dividing by zero or accessing a non-existent file.
