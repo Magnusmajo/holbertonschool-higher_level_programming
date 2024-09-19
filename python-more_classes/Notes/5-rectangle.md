@@ -16,13 +16,13 @@
 
 ### Argumentación
 
-El uso del atributo de clase `number_of_instances` es crucial para  
-el manejo eficiente de recursos y la depuración en aplicaciones complejas.  
-Al mantener un registro preciso del número de instancias activas,  
-los desarrolladores pueden identificar fácilmente posibles fugas de  
-memoria y optimizar el uso de recursos. Además, este conteo puede  
-ser útil para implementar patrones de diseño como el Singleton,  
-donde se necesita controlar estrictamente el número de instancias  
-de una clase. En resumen, `number_of_instances` no solo facilita el seguimiento de objetos, sino que también contribuye a la estabilidad  
-y eficiencia del software.
+El uso del atributo de clase `number_of_instances` es crucial para el  
+manejo eficiente de recursos y la depuración en aplicaciones complejas.  
+Al mantener un registro preciso del número de instancias activas, los  
+desarrolladores pueden identificar fácilmente posibles fugas de memoria  
+y optimizar el uso de recursos. Además, este conteo puede ser útil para  
+implementar patrones de diseño como el Singleton, donde se necesita  
+controlar estrictamente el número de instancias de una clase. En resumen,  
+`number_of_instances` no solo facilita el seguimiento de objetos, sino que  
+también contribuye a la estabilidad y eficiencia del software.
 ```
