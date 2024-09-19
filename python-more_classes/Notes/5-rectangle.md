@@ -1,7 +1,7 @@
 # Notas sobre la clase Rectangle
 
 ```markdown
-### El atributo de clase **number_of_instances** se utiliza para llevar un conteo de cuántas instancias (objetos) de una clase se han creado y eliminado. Aquí te detallo cómo funciona:
+### El atributo de clase <br>**number_of_instances**</br> se utiliza para llevar un conteo de cuántas instancias (objetos) de una clase se han creado y eliminado. Aquí te detallo cómo funciona:
 ```markdown
 
 ## Inicialización
