@@ -5,7 +5,6 @@
 
 ### Cómo funciona?:
 
-
 ## Inicialización
 - `number_of_instances` se inicializa en 0. Esto significa que, al principio, no hay instancias de la clase.
 
