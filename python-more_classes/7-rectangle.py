@@ -60,13 +60,18 @@ class Rectangle:
             return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """Returns the rectangle with the character(s) stored in print_symbol"""
-        if self.__width == 0 or self.__height == 0:
-            return ''
-        return '\n'.join([
-            str(self.print_symbol) * self.__width
-            for _ in range(self.__height)
-        ])
+        """
+        Returns a string representation of the rectangle
+        """
+        result = []
+        if (self.__width == 0 or self.__height == 0):
+            return ""
+        for i in range(self.height):
+            if i == self.height - 1:
+                result.append(str(self.print_symbol) * self.width)
+            else:
+                result.append((str(self.print_symbol) * self.width) + "\n")
+        return "".join(result)
 
     def __repr__(self):
         """return a string representation of the rectangle """
