@@ -26,3 +26,5 @@ class BaseGeometry:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater then 0".format(name))
+        else:
+            return True
