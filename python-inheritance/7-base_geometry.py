@@ -4,7 +4,6 @@
 
 class BaseGeometry:
     """An empty class named BaseGeometry"""
-    pass
 
     def area(self):
         """Public instance method that Calculates the area of the Geometry.
