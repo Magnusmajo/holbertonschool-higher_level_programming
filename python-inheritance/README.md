@@ -1,4 +1,5 @@
 # Python - Inheritance
+![Python](https://github.com/user-attachments/assets/a3524d0e-dbfe-43df-bc2e-fd7b4c6e0ed9)
 ```markdown
 # Python Inheritance
 
