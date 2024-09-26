@@ -22,6 +22,9 @@
 >>> my_list.print_sorted()
 [1, 2]
 
->>> my_list = MyList([1, 2, 3, 4])
->>> print(str(my_list))
-[1, 2, 3, 4]
+>>> my_list = MyList(1, 2)
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+AttributeError: 'tuple' object has no attribute 'print_sorted'
+>>> print(my_list)
+(1, 2)
