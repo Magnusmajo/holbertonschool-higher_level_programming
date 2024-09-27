@@ -23,8 +23,5 @@
 	[1, 2]
 
 	>>> new = MyList([1, 2, 3, 4])
-	>>> print(str(new))
+	>>> return(str(new))
 	[1, 2, 3, 4]
-
-    >>>new_list = MyList()
-    >>>return new_list
