@@ -23,5 +23,5 @@
 	[1, 2]
 
 	>>> new = MyList([1, 2, 3, 4])
-	>>> return(str(new))
+	>>> print(str(new))
 	[1, 2, 3, 4]
