@@ -24,5 +24,4 @@
 
 	>>> my_list = MyList([1, 2, 3, 4])
 	>>> print(str(my_list))
-    >>> return(my_list)
 	[1, 2, 3, 4]
