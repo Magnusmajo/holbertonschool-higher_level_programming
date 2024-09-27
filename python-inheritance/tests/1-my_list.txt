@@ -24,5 +24,4 @@
 
 	>>> new = MyList([1, 2, 3, 4])
     >>> new.print_sorted()
-	>>> return(str(new))
 	[1, 2, 3, 4]
