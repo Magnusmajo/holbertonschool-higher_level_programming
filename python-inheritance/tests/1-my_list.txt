@@ -12,6 +12,10 @@
 	>>> my_list.print_sorted()
 	[1, 2]
 
+    >>> my_list = MyList([2, 1])
+    >>> print(my_list.print_sorted())
+    >>> print(my_list.list)
+
 	>>> my_list = MyList([-2, -1])
 	>>> my_list.print_sorted()
 	[-2, -1]
