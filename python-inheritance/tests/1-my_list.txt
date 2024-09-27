@@ -1,27 +1,39 @@
->>> MyList = __import__('1-my_list').MyList
+>>> MyList = __import__('1-my_list', fromlist=['MyList']).MyList
 
-	>>> my_list = MyList([])
-	>>> my_list.print_sorted()
-	[]
+>>> my_list = MyList([])
+>>> sorted_list = my_list.print_sorted()
+[]
+>>> print(sorted_list)
+None
 
-	>>> my_list = MyList([1, 2])
-	>>> my_list.print_sorted()
-	[1, 2]
+>>> my_list = MyList([1, 2])
+>>> sorted_list = my_list.print_sorted()
+[1, 2]
+>>> print(sorted_list)
+None
 
-	>>> my_list = MyList([2, 1])
-	>>> my_list.print_sorted()
-	[1, 2]
+>>> my_list = MyList([2, 1])
+>>> sorted_list = my_list.print_sorted()
+[1, 2]
+>>> print(sorted_list)
+None
 
-	>>> my_list = MyList([-2, -1])
-	>>> my_list.print_sorted()
-	[-2, -1]
+>>> my_list = MyList([-2, -1])
+>>> sorted_list = my_list.print_sorted()
+[-2, -1]
+>>> print(sorted_list)
+None
 
-	>>> my_list = MyList([])
-	>>> my_list.append(1)
-	>>> my_list.append(2)
-	>>> my_list.print_sorted()
-	[1, 2]
+>>> my_list = MyList([])
+>>> my_list.append(1)
+>>> my_list.append(2)
+>>> sorted_list = my_list.print_sorted()
+[1, 2]
+>>> print(sorted_list)
+None
 
-	>>> my_list = MyList([1, 2, 3, 4])
-	>>> print(str(my_list))
-	[1, 2, 3, 4]
+>>> my_list = MyList([1, 2, 3, 4])
+>>> sorted_list = my_list.print_sorted()
+[1, 2, 3, 4]
+>>> print(sorted_list)
+None
