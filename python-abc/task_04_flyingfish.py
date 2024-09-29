@@ -6,7 +6,7 @@ Defines the fish class
 
 class Fish:
     """This is the Fish class representing a fish."""
-    
+
     def swim(self):
         """This method prints a message indicating that the
         fish is swimming.
@@ -23,7 +23,7 @@ class Fish:
 # Define the Bird class
 class Bird:
     """This is the Bird class representing a bird."""
-    
+
     def fly(self):
         """This method prints a message indicating that
         the bird is flying.
@@ -42,7 +42,7 @@ class FlyingFish(Fish, Bird):
     """This is the FlyingFish class representing a flying
     fish. It inherits from both Fish and Bird.
     """
-    
+
     def swim(self):
         """This method overrides the swim method from Fish to
         print a custom message."""
