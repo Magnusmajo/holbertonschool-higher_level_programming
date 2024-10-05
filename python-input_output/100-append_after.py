@@ -17,6 +17,3 @@ def append_after(filename="", search_string="", new_string=""):
                 text.append(new_string)
     with open(filename, "w") as w:
         w.write("".join(text))
-
-# Test the function
-append_after("file", "c is", "Python is cool!\n")
