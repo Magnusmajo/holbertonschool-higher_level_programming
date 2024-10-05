@@ -7,6 +7,8 @@ def save_to_jason(my_obj, filename):
     Args:
         my_obj: object to be saved
         filename: name of the file
+        Returns:
+        str: A Json string representation
     """
 
     with open(filename, 'w') as f:
