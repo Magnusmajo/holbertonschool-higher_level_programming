@@ -25,11 +25,19 @@ class CustonObject:
         print(f"Is Student: {self.is_student}")
 
     def serialize(self, filename):
-        ""
+        """
         "Serializing the object and saving it into a file"""
+        with open(filename, 'wb') as fileText:
+            pickle.dump(self, fileText)
+
+    @classmethod
+    def deserialize(cls, filename):
+        """deserialize filename"""
+
         try:
-            with open(filename, 'rb') as f:
-                return pickle.load(f)
-        except Exception as e:
-            print(f"An error occurred: {e}")
+            with open(filename, 'rb') as fileText:
+                objet = pickle.load(fileText)
+        except Exception:
             return None
+
+        return objet
