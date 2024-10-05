@@ -10,5 +10,5 @@ def save_to_jason(my_obj, filename):
     """
     import json
 
-    with open('filename', 'w') as f:
+    with open(filename, 'w') as f:
         json.dump(my_obj, f)
