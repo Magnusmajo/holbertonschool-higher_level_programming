@@ -10,10 +10,13 @@ def append_after(filename="", search_string="", new_string=""):
         new_string: string to insert
     """
     text = []
-    with open(filename) as r:
-        for lines in r:
-            text += lines
+    with open(filename, "r") as r:
+        for line in r:
+            text.append(line)
             if search_string in line:
-                text += new_string
+                text.append(new_string)
     with open(filename, "w") as w:
-        w.write(text)
+        w.write("".join(text))
+
+# Test the function
+append_after("file", "c is", "Python is cool!\n")
