@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Add item module"""
+"""Add item module
+load, add, save
+"""
 import sys
 
 
