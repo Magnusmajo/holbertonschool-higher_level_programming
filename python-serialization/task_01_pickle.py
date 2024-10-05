@@ -20,12 +20,13 @@ class CustonObject:
 
     def display(self):
         """Display the object's attributes."""
-        print(f"Name: {self.name},
-            Age: {self.age},
-            Is Student: {self.is_student}")
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"Is Student: {self.is_student}")
 
     def serialize(self, filename):
-        """Serializing the object and saving it into a file"""
+        ""
+        "Serializing the object and saving it into a file"""
         try:
             with open(filename, 'rb') as f:
                 return pickle.load(f)
