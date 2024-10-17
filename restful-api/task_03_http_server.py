@@ -51,5 +51,5 @@ def run(server_class=http.server.HTTPServer,
     except KeyboardInterrupt:
         pass
 
-
-run()
+if __name__ == '__main__':
+    run()
