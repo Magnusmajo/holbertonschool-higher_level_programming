@@ -33,7 +33,7 @@ class CustomRequestHandler(http.server.BaseHTTPRequestHandler):
             self.send_header('Content-type', 'application/json')
             self.end_headers()
             self.wfile.write(json.dumps(
-                {"status": "OK", "message": "Service is running"}).encode())
+                {"status": "OK"}).encode())
 
         else:
             self.send_response(404)
