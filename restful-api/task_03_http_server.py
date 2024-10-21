@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""HTTP Server"""
+"""Basic HTTP Server"""
 import http.server
 import json
 
@@ -26,7 +26,7 @@ class CustomRequestHandler(http.server.BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(json.dumps(
                 {"version": "1.0", "description":
-                "A simple API built with http.server"}).encode())
+                 "A simple API built with http.server"}).encode())
 
         elif self.path == '/status':
             self.send_response(200)
