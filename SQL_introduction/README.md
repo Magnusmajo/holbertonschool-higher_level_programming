@@ -38,14 +38,14 @@ If the table first_table already exists, your script should not fail
 You are not allowed to use the SELECT or SHOW statements
 
 5. Full description
-mandatory
+
 Write a script that prints the following description of the table first_table from the database hbtn_0c_0 in your MySQL server.
 
 The database name will be passed as an argument of the mysql command
 You are not allowed to use the DESCRIBE or EXPLAIN statements
 
 6. List all in table
-mandatory
+
 Write a script that lists all rows of the table first_table from the database hbtn_0c_0 in your MySQL server.
 
 All fields should be printed
@@ -61,13 +61,13 @@ name = Best School
 The database name will be passed as an argument of the mysql command
 
 8. Count 89
-mandatory
+
 Write a script that displays the number of records with id = 89 in the table first_table of the database hbtn_0c_0 in your MySQL server.
 
 The database name will be passed as an argument of the mysql command
 
 9. Full creation
-mandatory
+
 Write a script that creates a table second_table in the database hbtn_0c_0 in your MySQL server and add multiples rows.
 
 second_table description:
@@ -84,10 +84,17 @@ id = 3, name = “Bob”, score = 14
 id = 4, name = “George”, score = 8
 
 10. List by best
-mandatory
+
 Write a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 Results should display both the score and the name (in this order)
 Records should be ordered by score (top first)
 The database name will be passed as an argument of the mysql command
 
+11. Select the best
+
+Write a script that lists all records with a score >= 10 in the table second_table of the database hbtn_0c_0 in your MySQL server.
+
+Results should display both the score and the name (in this order)
+Records should be ordered by score (top first)
+The database name will be passed as an argument of the mysql command
