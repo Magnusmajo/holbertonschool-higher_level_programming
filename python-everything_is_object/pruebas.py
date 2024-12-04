@@ -1,12 +1,12 @@
 from io import open
 
 # answer = 'yes'
-answer = 'no'
+# answer = 'no'
+answer = 'True'
 
-with open('5-answer.txt', 'w') as f:
+with open('9-answer.txt', 'w') as f:
     f.write(answer)
 
-# a = 89
-# b = a + 1
-
-# print(f'ID of a = {id(a)} \n  Id of b={id(b)}')
+s1 = "Best School"
+s2 = "Best School"
+print(s1 is s2)
