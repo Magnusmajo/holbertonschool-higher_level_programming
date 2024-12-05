@@ -5,10 +5,10 @@ answer = '[1, 2, 3, 4]'
 # answer = 'True'
 # answer = 'False'
 
-with open('14-answer.txt', 'w') as f:
+with open('15-answer.txt', 'w') as f:
     f.write(answer)
 
 l1 = [1, 2, 3]
 l2 = l1
-l1.append(4)
+l1 = l1 + [4]
 print(l2)
