@@ -1,16 +1,17 @@
 from io import open
 
-answer = [1, 2, 3, 4]
+answer = [1, 2, 3]
 # answer = 'no'
 # answer = 'True'
 # answer = 'False'
 
-with open('17-answer.txt', 'w') as f:
+with open('18-answer.txt', 'w') as f:
     f.write(answer)
 
-# def increment(n):
-#     n.append(4)
+def assign_value(n, v):
+    n = v
 
-# l = [1, 2, 3]
-# increment(l)
-# print(l)
+l1 = [1, 2, 3]
+l2 = [4, 5, 6]
+assign_value(l1, l2)
+print(l1)
