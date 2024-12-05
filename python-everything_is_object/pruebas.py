@@ -1,14 +1,16 @@
 from io import open
 
-answer = '[1, 2, 3, 4]'
+answer = 1
 # answer = 'no'
 # answer = 'True'
 # answer = 'False'
 
-with open('15-answer.txt', 'w') as f:
-    f.write(answer)
+# with open('17-answer.txt', 'w') as f:
+#     f.write(answer)
 
-l1 = [1, 2, 3]
-l2 = l1
-l1 = l1 + [4]
-print(l2)
+def increment(n):
+    n += 1
+
+a = 1
+increment(a)
+print(a)
